@@ -16,7 +16,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Product> Products { get; set; } = null;
     public DbSet<OrderDetail> OrderDetails { get; set; } = null;
 
-    //Access Modifier
+    //Access Modifier return type
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         //Verbatim String
